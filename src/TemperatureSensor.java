@@ -6,13 +6,13 @@ public class TemperatureSensor implements Subject{
     private int tempState;
     private int sensorID;
     private String location;
-    private Date lastTechnicalRevision;
+    private String lastTechnicalRevision;
     private float metrologicalPrecision;
 
     public TemperatureSensor(int initialTemp,
                              int sensorID,
                              String location,
-                             Date lastTechnicalRevision,
+                             String lastTechnicalRevision,
                              float metrologicalPrecision){
         tempState=initialTemp;
         observers=new ArrayList<Observer>();

@@ -1,7 +1,8 @@
-public class TextDisplay implements Observer {
+public class TextDisplay extends Observer {
     private int value;
 
-    public TextDisplay(){
+    public TextDisplay(int displayId) {
+        super(displayId);
     }
 
     public void update(Subject subject) {

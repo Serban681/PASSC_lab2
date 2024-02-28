@@ -1,8 +1,9 @@
-public class NumericDisplay implements Observer{
+public class NumericDisplay extends Observer{
 
     private int value;
 
-    public NumericDisplay(){
+    public NumericDisplay(int displayId) {
+        super(displayId);
     }
 
     public void update(Subject subject) {
