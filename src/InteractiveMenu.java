@@ -5,14 +5,6 @@ public class InteractiveMenu {
     private ArrayList<TemperatureSensor> temperatureSensors = new ArrayList<TemperatureSensor>();
     private ArrayList<Observer> displays = new ArrayList<Observer>();
 
-//    Write an interactive program, where you can repeatedly select the following options from a menu:
-//
-//    Create a new temperature sensor. Input sensor data and initial temperature value.
-//    Create a new display (text, numeric or average)
-//    Attach an existing display to one of the existing temperature sensors. A sensor will have multiple displays attached. A display can be attached to multiple sensors.
-//    Detach a display from a sensor
-//    Set a new temperature value to one of the sensors. All the attached displays must update.
-
     public void run() {
         Scanner scanner = new Scanner(System.in);
 
@@ -23,9 +15,6 @@ public class InteractiveMenu {
             System.out.println("4. Detach a display from a sensor");
             System.out.println("5. Set a new temperature value to one of the sensors");
             System.out.println("6. Exit");
-
-            String name = scanner.nextLine();
-            System.out.println("Your input: " + name);
 
             int option = Integer.parseInt(scanner.nextLine());
             switch (option) {
